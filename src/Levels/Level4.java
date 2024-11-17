@@ -25,10 +25,7 @@ import core.Cooldown;
 import core.Game;
 import core.Main;
 
-public class Level4 extends Level{
-	
-	private int id;
-	
+public class Level4 extends Level{	
 	private static boolean isDoorOpen = false;
 	private static boolean keyGrabbed = false;
 	
@@ -37,38 +34,24 @@ public class Level4 extends Level{
 	
 	private float pX1 = 450;
 	private float pY1 = 850;
-	private float iceX1 = pX1;
-	private float iceY1 = pY1;
 
 	private float pX2 = 1000;
 	private float pY2 = 775;
-	private float iceX2 = pX2;
-	private float iceY2 = pY2;
 
 	private float pX3 = 1550;
 	private float pY3 = 700;
-	private float iceX3 = pX3;
-	private float iceY3 = pY3;
 
 	private float pX4 = 2100;
 	private float pY4 = 625;
-	private float iceX4 = pX4;
-	private float iceY4 = pY4;
 
 	private float pX5 = pX1 + 2*1080 + 400;
 	private float pY5 = getHeight() - pY1;
-	private float iceX5 = pX5;
-	private float iceY5 = pY5;
 
 	private float pX6 = pX2 + 2*1080 + 420;
 	private float pY6 = getHeight() - pY2;
-	private float iceX6 = pX6;
-	private float iceY6 = pX6;
 
 	private float pX7 = pX3 + 2*1080 + 420;
 	private float pY7 = getHeight() - pY3;
-	private float iceX7 = pX7;
-	private float iceY7 = pY7;
 
 	private float pX8 = pX4 + 2*1080 + 420;
 	private float pY8 = getHeight() - pY4;
@@ -80,147 +63,120 @@ public class Level4 extends Level{
 	
 	public static boolean isCompleted4 = false;	
 	public int doorTimer = 0;
-	
-	public Level4(int id)
-	{
-		this.id = id;
-
-
-
-	} 
-	
-	public static void reset()
-	{
+		
+	public static void reset(){
 		isDoorOpen = false;
 		keyGrabbed = false;
 		
-		for(Ice I : IceManager.getIce())
-		{
+		for(Ice I : IceManager.getIce()){
 			I.setSlide(false);
 		}
 	}
 	
-	public void render(Graphics g) throws SlickException {
-		
+	public void render(Graphics g) throws SlickException{
 		g.setColor(Color.white);
-	
 		g.setColor(Color.black);
-		for(Spike s : SpikeManager.getSpikes())
-		{
-			s.render(g);
-		}
-		for(Tile t : TileManager.getWhiteTiles()) 
-		{
-			t.render(g);
-		}
-		for(Tile t : TileManager.getBlackTiles()) 
-		{
-			t.render(g);
-		}
 		
-		
-		for(Switch s : SwitchManager.getSwitches())
-		{
+		for(Spike s : SpikeManager.getSpikes()){
 			s.render(g);
 		}
 		
-		for(Ice I : IceManager.getIce())
-		{
+		for(Tile t : TileManager.getWhiteTiles()) {
+			t.render(g);
+		}
+		
+		for(Tile t : TileManager.getBlackTiles()) {
+			t.render(g);
+		}
+		
+		for(Switch s : SwitchManager.getSwitches()){
+			s.render(g);
+		}
+		
+		for(Ice I : IceManager.getIce()){
 			I.render(g);
 		}
-		//door & key
-		if(!keyGrabbed)
-		{
+		
+		if(!keyGrabbed){
 			AnimationLoader.returnAnimation("key").draw(keyX,keyY, 180, 180);
 		}
-		if(keyGrabbed)
-		{
 		
-			if(doorTimer < 25)
-			{
-			AnimationLoader.returnAnimation("door").draw(5510,Main.getScreenHeight()-290, 150, 230);
+		if(keyGrabbed){
+			if(doorTimer < 25){
+				AnimationLoader.returnAnimation("door").draw(5510,Main.getScreenHeight()-290, 150, 230);
 			}
-			if(doorTimer >= 25)
-			{
+			
+			if(doorTimer >= 25){
 				ImageLoader.returnImages("openDoor").draw((int)(5510), (int)(Main.getScreenHeight()-290), 150, 230);
 			}
-		}
-		else
-		{
+		}else{
 			ImageLoader.returnImages("door").draw((int)(5510), (int)(Main.getScreenHeight()-290), 150, 230);
 		}
-
 		Cooldown.draw(g);
 	}
 
-	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
+	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException{
 		TileManager.clearTiles();
 		Border.clearBorders();
 		SwitchManager.clearSwitches();
 		SpikeManager.clearSpikes();
 		IceManager.clearIce();
 		
-		for(Ice I : IceManager.getIce())
-		{
+		for(Ice I : IceManager.getIce()){
 			I.update();
 		}
 		
-		if(keyGrabbed)
-		{
+		if(keyGrabbed){
 			doorTimer ++;
 		}
+		
 		generateWorld();
 	
-		for(pushBlock pB : pushBlockManager.getPushBlocks())
-		{
+		for(pushBlock pB : pushBlockManager.getPushBlocks()){
 			pB.update();
 		}
-		for(Switch s : SwitchManager.getSwitches())
-		{
-			if(Game.getP().getxPos() > s.getX() && Game.getP().getxPos() < s.getX()+ s.getWidth() 
-			&& Game.getP().getyPos() + Game.getP().getHeight() > s.getY()  && Game.getP().getyPos() < s.getY() +s.getHeight()) 
-			{
+		
+		for(Switch s : SwitchManager.getSwitches()){
+			if(Game.getP().getxPos() > s.getX() && Game.getP().getxPos() < s.getX() +
+					s.getWidth() && Game.getP().getyPos() + Game.getP().getHeight() > 
+					s.getY()  && Game.getP().getyPos() < s.getY() +s.getHeight()){
 				Game.switchg();
 			}
 		}
-		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen)
-		{
+		
+		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
 			isCompleted4 = true;
 			Game.getP().playerReset();
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().setxPos(500);
 			Game.getP().setyPos(Main.getScreenHeight()/2);
 		}
-		if(Game.getP().getPlayerShape().intersects(Key.getKeyHitBox()))
-		{
+		
+		if(Game.getP().getPlayerShape().intersects(Key.getKeyHitBox())){
 			keyGrabbed = true;
 			isDoorOpen = true;
 		}
-		for(Spike s : SpikeManager.getSpikes())
-		{
+		
+		for(Spike s : SpikeManager.getSpikes()){
 			s.update();
 		}
-		for(Spike s : SpikeManager.getSpikes())
-		{
-			if(Game.getP().getPlayerShape().intersects(s.getSpike()))
-			{
+		
+		for(Spike s : SpikeManager.getSpikes()){
+			if(Game.getP().getPlayerShape().intersects(s.getSpike())){
 				Game.getP().die();
 			}
 		}
 	}
 
-	public int getWidth() 
-	{
+	public int getWidth(){
 		return Main.getScreenWidth()*3;
 	}
 
-	public int getHeight() 
-	{
+	public int getHeight() {
 		return Main.getScreenHeight();
 	}
 
-	private void generateWorld() 
-	{		
+	private void generateWorld(){		
 		//Floors
 		TileManager.createBorder(0, 980, Main.getScreenWidth()*3, 980);
 		TileManager.createBorder(0,  100, Main.getScreenWidth()*3, 100);
@@ -281,10 +237,11 @@ public class Level4 extends Level{
 		SwitchManager.createSwitch(pX8 + pWidth + 125, pY8 + 50, 100, 100, false);
 		//middle (switches, borders, tiles, key)
 		SwitchManager.createSwitch(getWidth()/2 - 100, getHeight() - 250, 100, 100, true);
-		if(!keyGrabbed)
-		{
+		
+		if(!keyGrabbed){
 			Key.createKey(keyX,keyY, 180, 84);
 		}
+		
 		TileManager.createTile(getWidth()/2 - 180, getHeight()/2, 40, getHeight(), "white");
 		TileManager.createTile(getWidth()/2 + 50, getHeight()/2, 40, getHeight(), "white");
 		TileManager.createBorder(getWidth()/2-180, getHeight()/2, getWidth()/2-140, getHeight()/2);
@@ -294,34 +251,27 @@ public class Level4 extends Level{
 		TileManager.createBorder(getWidth()/2+50, getHeight()/2+30, getWidth()/2+50, getHeight());
 		TileManager.createBorder(getWidth()/2+90, getHeight()/2+30, getWidth()/2+90, getHeight());
 		//spikes (bottom & top)
-		for(int i = 400; i < getWidth()/2 - 180; i+=32)
-		{
+		for(int i = 400; i < getWidth()/2 - 180; i+=32){
 			SpikeManager.createSpike(i, getHeight() - 132, 32, 32, false);
 		}
-		for(int i = 100; i < getWidth()/2 - 180; i+= 32)
-		{
+		
+		for(int i = 100; i < getWidth()/2 - 180; i+= 32){
 			SpikeManager.createSpike(i, 100, 32, 32, true);
 		}
-		for(int i = getWidth()/2 + 50; i < getWidth() - 200; i += 32)
-		{
+		
+		for(int i = getWidth()/2 + 50; i < getWidth() - 200; i += 32){
 			SpikeManager.createSpike(i, getHeight() - 132, 32, 32, false);
 		}
-		for(int i = getWidth()/2 + 80; i < getWidth(); i += 32)
-		{
+		
+		for(int i = getWidth()/2 + 80; i < getWidth(); i += 32){
 			SpikeManager.createSpike(i, 100, 32, 32, true);
 		}
 		//door
 		Door.createDoor(5510, Main.getScreenHeight()-290, 150, 230);
 	}
 
-	public static boolean isCompleted4() {
-		return isCompleted4;
-	}
 	public static void setCompleted4(boolean b) 
 	{
 		isCompleted4 = b;
-		
 	}
-
-
 }

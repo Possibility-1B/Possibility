@@ -36,8 +36,7 @@ public class AnimationLoader {
 	private static SpriteSheet gravityCooldown;
 	private static Animation cooldown;
 	
-	public static void loadAnimations() throws SlickException
-	{
+	public static void loadAnimations() throws SlickException{
 		playerRunningRight = new SpriteSheet("res/animations/Player/playerRunningRight.png", 140, 186);
 		playerRunningRightAnimation = new Animation(playerRunningRight,50);
 		
@@ -67,51 +66,46 @@ public class AnimationLoader {
 		
 		door =  new SpriteSheet("res/animations/Puzzle/door.png", 600,600);
 		openDoor = new Animation(door, 100);
-		
-		
 	}
 	
-	public static Animation returnAnimation(String s) throws SlickException
-	{
-		if(s.equalsIgnoreCase("playerMovingRight"))
-		{
+	public static Animation returnAnimation(String s) throws SlickException{
+		if(s.equalsIgnoreCase("playerMovingRight")){
 			return playerRunningRightAnimation;
 		}
-		if(s.equalsIgnoreCase("credits"))
-		{
+		
+		if(s.equalsIgnoreCase("credits")){
 			return credits;
 		}
-		if(s.equalsIgnoreCase("cooldown"))
-		{
+		
+		if(s.equalsIgnoreCase("cooldown")){
 			return cooldown;
 		}
-		if(s.equalsIgnoreCase("playerMovingLeft"))
-		{
+		
+		if(s.equalsIgnoreCase("playerMovingLeft")){
 			return playerRunningLeftAnimation;
 		}
-		if(s.equalsIgnoreCase("playerMovingRightUpsideDown"))
-		{
+		
+		if(s.equalsIgnoreCase("playerMovingRightUpsideDown")){
 			return playerUpsideDownRunningRightAnimation;
 		}
 		
-		if(s.equalsIgnoreCase("playerMovingLeftUpsideDown"))
-		{
+		if(s.equalsIgnoreCase("playerMovingLeftUpsideDown")){
 			return playerUpsideDownRunningLeftAnimation;
 		}
-		if(s.equalsIgnoreCase("portal"))
-		{
+		
+		if(s.equalsIgnoreCase("portal")){
 			return portalDoor;
 		}
-		if(s.equalsIgnoreCase("openedPortal"))
-		{
+		
+		if(s.equalsIgnoreCase("openedPortal")){
 			return openedPortal;
 		}
-		if(s.equalsIgnoreCase("key"))
-		{
+		
+		if(s.equalsIgnoreCase("key")){
 			return rotateKey;
 		}
-		if(s.equalsIgnoreCase("door"))
-		{
+		
+		if(s.equalsIgnoreCase("door")){
 			return openDoor;
 		}
 		

@@ -6,8 +6,7 @@ import org.newdawn.slick.SlickException;
 
 import core.Main;
 
-public class ImageLoader {
-	
+public class ImageLoader {	
 	private static Image cursor;
 	private static int timer = 0;
 	private static int fadeInTimer = 0;
@@ -21,7 +20,6 @@ public class ImageLoader {
 	
 	private static Image welcome;
 	private static Image youDied;
-
 	
 	private static Image lvl1;
 	private static Image lvl2;
@@ -40,7 +38,6 @@ public class ImageLoader {
 	private static Image thanks;
 	private static Image thumbsup;
 
-	
 	private static Image gravityUp;
 	private static Image gravityDown;
 	private static Image gravityRight;
@@ -50,7 +47,6 @@ public class ImageLoader {
 	private static Image AFKRight;
 	private static Image AFKUpsideDownLeft;
 	private static Image AFKUpsideDownRight;
-
 	
 	private static Image cooldown;
 	
@@ -65,11 +61,8 @@ public class ImageLoader {
 	private static Image newIce;
 	private static Image iceText2;
 	private static Image ghostBlockText;
-	
-
-	
-	public static void loadImages() throws SlickException
-	{
+		
+	public static void loadImages() throws SlickException{
 		midgameLogo = new Image("res/images/GUI/Midgame1.png");
 		midgameLogonoBGScaled = midgameLogo.getScaledCopy(Main.getScreenWidth(), Main.getScreenHeight());
 		
@@ -114,207 +107,186 @@ public class ImageLoader {
 		gravityRight = new Image("res/images/Arrows/leverRight.png");
 		gravityLeft = new Image("res/images/Arrows/leverLeft.png");
 		
-		
 		cursor = new Image("res/images/GUI/cursor.png");
 	
 		ghostBlock = new Image("res/images/Puzzle/ghostBlock.png");
 		downGhostBlock = new Image("res/images/Puzzle/downGhostBlock.png");
 		
-		//text
 		newIce = new Image("res/images/Text/newIce.png");
 		iceText2 = new Image("res/images/Text/iceText2.png");
 		ghostBlockText = new Image("res/images/Text/ghostBlockText.png");
 	}
 	
-	public static Image getCursor()
-	{
+	public static Image getCursor(){
 		return cursor;
 	}
 
-	
-	public static Image returnImages(String s) throws SlickException
-	{
-		if(s.equalsIgnoreCase("gravityUp"))
-		{
+	public static Image returnImages(String s) throws SlickException{
+		if(s.equalsIgnoreCase("gravityUp")){
 			return gravityUp;
 		}
-		if(s.equalsIgnoreCase("cooldown"))
-		{
+		
+		if(s.equalsIgnoreCase("cooldown")){
 			return cooldown;
 		}
 		
-		if(s.equalsIgnoreCase("gravityDown"))
-		{
+		if(s.equalsIgnoreCase("gravityDown")){
 			return gravityDown;
 		}
-		if(s.equalsIgnoreCase("gravityRight"))
-		{
+		
+		if(s.equalsIgnoreCase("gravityRight")){
 			return gravityRight;
 		}
-		if(s.equalsIgnoreCase("gravityLeft"))
-		{
+		
+		if(s.equalsIgnoreCase("gravityLeft")){
 			return gravityLeft;
 		}
-		if(s.equalsIgnoreCase("AFKLeft"))
-		{
+		
+		if(s.equalsIgnoreCase("AFKLeft")){
 			return AFKLeft;
 		}
-		if(s.equalsIgnoreCase("AFKRight"))
-		{
+		
+		if(s.equalsIgnoreCase("AFKRight")){
 			return AFKRight;
 		}
-		if(s.equalsIgnoreCase("AFKUpsideDownLeft"))
-		{
+		
+		if(s.equalsIgnoreCase("AFKUpsideDownLeft")){
 			return AFKUpsideDownLeft;
 		}
-		if(s.equalsIgnoreCase("AFKUpsideDownRight"))
-		{
+		
+		if(s.equalsIgnoreCase("AFKUpsideDownRight")){
 			return AFKUpsideDownRight;
 		}
 		
-		if(s.equalsIgnoreCase("glow"))
-        {
+		if(s.equalsIgnoreCase("glow")){
             return glow;
         }
 
-		if(s.equalsIgnoreCase("door"))
-		{
+		if(s.equalsIgnoreCase("door")){
 			return door;
 		}
 		
-		if(s.equalsIgnoreCase("spike"))
-		{
+		if(s.equalsIgnoreCase("spike")){
 			return spike;
 		}
 		
-		
-		if(s.equalsIgnoreCase("lvl1"))
-		{
+		if(s.equalsIgnoreCase("lvl1")){
 			return lvl1;
 		}
-		if(s.equalsIgnoreCase("lvl2"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl2")){
 			return lvl2;
 		}
-		if(s.equalsIgnoreCase("lvl3"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl3")){
 			return lvl3;
 		}
-		if(s.equalsIgnoreCase("lvl4"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl4")){
 			return lvl4;
 		}
-		if(s.equalsIgnoreCase("lvl5"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl5")){
 			return lvl5;
 		}
-		if(s.equalsIgnoreCase("lvl6"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl6")){
 			return lvl6;
 		}
-		if(s.equalsIgnoreCase("lvl7"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl7")){
 			return lvl7;
 		}
-		if(s.equalsIgnoreCase("lvl8"))
-		{
+		
+		if(s.equalsIgnoreCase("lvl8")){
 			return lvl8;
 		}
-		if(s.equalsIgnoreCase("pressE"))
-		{
+		
+		if(s.equalsIgnoreCase("pressE")){
 			return pressE;
 		}
-		if(s.equalsIgnoreCase("E"))
-		{
+		
+		if(s.equalsIgnoreCase("E")){
 			return E;
 		}
-		if(s.equalsIgnoreCase("lvlCredits"))
-		{
+		
+		if(s.equalsIgnoreCase("lvlCredits")){
 			return lvlCredits;
 		}
 		
-		if(s.equalsIgnoreCase("credits"))
-		{
+		if(s.equalsIgnoreCase("credits")){
 			return credits;
 		}
-		if(s.equalsIgnoreCase("rate"))
-		{
+		
+		if(s.equalsIgnoreCase("rate")){
 			return rate;
 		}
-		if(s.equalsIgnoreCase("thanks"))
-		{
+		
+		if(s.equalsIgnoreCase("thanks")){
 			return thanks;
 		}
-		if(s.equalsIgnoreCase("thumbsup"))
-		{
+		
+		if(s.equalsIgnoreCase("thumbsup")){
 			return thumbsup;
 		}
 		
-		if(s.equalsIgnoreCase("openDoor"))
-		{
+		if(s.equalsIgnoreCase("openDoor")){
 			return openDoor;
 		}
 		
-        if(s.equalsIgnoreCase("welcome"))
-        {
+        if(s.equalsIgnoreCase("welcome")){
             return welcome;
         }
-        if(s.equalsIgnoreCase("youDied"))
-        {
+        
+        if(s.equalsIgnoreCase("youDied")){
         	return youDied;
         }
         
-        if(s.equalsIgnoreCase("ghostBlock"))
-        {
+        if(s.equalsIgnoreCase("ghostBlock")){
             return ghostBlock;
         }
-        if(s.equalsIgnoreCase("downGhostBlock"))
-        {
+        
+        if(s.equalsIgnoreCase("downGhostBlock")){
             return downGhostBlock;
         }
-        if(s.equalsIgnoreCase("ghostBlockText"))
-        {
+        
+        if(s.equalsIgnoreCase("ghostBlockText")){
             return ghostBlockText;
         }
-        if(s.equalsIgnoreCase("spike2"))
-        {
+        
+        if(s.equalsIgnoreCase("spike2")){
         	return spike2;
         }
         
-        if(s.equalsIgnoreCase("iceText2"))
-        {
+        if(s.equalsIgnoreCase("iceText2")){
         	return iceText2;
         }
-        if(s.equalsIgnoreCase("newIce"))
-        {
+        
+        if(s.equalsIgnoreCase("newIce")){
         	return newIce;
         }
+        
 		return null;
 	}
 	
-	public static void getImages(String s)
-	{
-		if(s.equalsIgnoreCase("logo"))
-		{	
+	public static void getImages(String s){
+		if(s.equalsIgnoreCase("logo")){	
 			timer++;
-			if(timer < 255)
-			{
+			
+			if(timer < 255){
 				fadeInTimer++;
 			}
-			if(timer > 300)
-			{
+			
+			if(timer > 300){
 				fadeOutTimer--;
 			}
-			if(timer <= 255)
-			{
+			
+			if(timer <= 255){
 				midgameLogonoBGScaled.draw(-1, -1, new Color(255,255,255,fadeInTimer));
 			}
-			else if(timer > 300)
-			{
+			else if(timer > 300){
 				midgameLogonoBGScaled.draw(-1, -1, new Color(255,255,255,fadeOutTimer));
-			}
-			else
-			{
+			}else{
 				midgameLogonoBGScaled.draw(-1, -1);
 			}
 		}

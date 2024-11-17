@@ -1,11 +1,5 @@
 package Levels;
 
-import org.newdawn.slick.Color;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
-import org.newdawn.slick.state.StateBasedGame;
-
 import GameObject.Block.Border;
 import GameObject.Block.Door;
 import GameObject.Block.Switch;
@@ -25,86 +19,67 @@ import core.Cooldown;
 import core.Game;
 import core.Main;
 
-public class Level3 extends Level{
-	
-	private int id;
-	
-	private static boolean isDoorOpen = false;
-	private static boolean keyGrabbed = false;
-	
-	public static boolean isCompleted3 = false;	
-	
-	private static float icex = Main.getScreenWidth() - 500;
-	private static float icey = 980;
-	private static float iceWidth = 1300;
-	private static float iceHeight = Main.getScreenHeight();
-	
-	private int keyX = getWidth()/2;
-	private int keyY = getHeight()/2 + 200;
-	
-	public int doorTimer = 0;
-	
-	public Level3(int id)
-	{
-		this.id = id;
-	} 
+import org.newdawn.slick.Color;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.state.StateBasedGame;
 
-	public static void reset()
-	{
+public class Level3 extends Level{	
+	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted3 = false;	
+	
+	private static float icex = Main.getScreenWidth() - 500, icey = 980, iceWidth = 1300,
+			iceHeight = Main.getScreenHeight();
+	
+	private int keyX = getWidth()/2, keyY = getHeight()/2 + 200, doorTimer = 0;
+
+	public static void reset(){
 		isDoorOpen = false;
 		keyGrabbed = false;
-		for(Ice I : IceManager.getIce())
-		{
+		
+		for(Ice I : IceManager.getIce()){
 			I.setSlide(false);
 		}
 	}
 	
-	public void render(Graphics g) throws SlickException {
-		
+	public void render(Graphics g) throws SlickException{
 		g.setColor(Color.white);
-		for(Tile t : TileManager.getWhiteTiles()) 
-		{
+		
+		for(Tile t : TileManager.getWhiteTiles()) {
 			t.render(g);
 		}
+		
 		g.setColor(Color.black);
-		for(Tile t : TileManager.getBlackTiles()) 
-		{
+		
+		for(Tile t : TileManager.getBlackTiles()) {
 			t.render(g);
 		}
 		
-		for(Spike s : SpikeManager.getSpikes())
-		{
-			s.render(g);
-		}
-		for(Switch s : SwitchManager.getSwitches())
-		{
+		for(Spike s : SpikeManager.getSpikes()){
 			s.render(g);
 		}
 		
-		for(Ice I : IceManager.getIce())
-		{
+		for(Switch s : SwitchManager.getSwitches()){
+			s.render(g);
+		}
+		
+		for(Ice I : IceManager.getIce()){
 			I.render(g);
 		}
-		//door & key
-		if(!keyGrabbed)
-		{			
-			AnimationLoader.returnAnimation("key").draw(keyX, keyY, 180, 180);
-
-		}
-		if(keyGrabbed)
-		{
 		
-			if(doorTimer < 25)
-			{
+		if(!keyGrabbed){			
+			AnimationLoader.returnAnimation("key").draw(keyX, keyY, 180, 180);
+		}
+		
+		if(keyGrabbed){
+			if(doorTimer < 25){
 				AnimationLoader.returnAnimation("door").draw(getWidth() - 250,Main.getScreenHeight()-290, 150, 230);
 			}
-			if(doorTimer >= 25)
-			{
+			
+			if(doorTimer >= 25){
 				ImageLoader.returnImages("openDoor").draw(getWidth() - 250, (int)(Main.getScreenHeight()-290), 150, 230);
 			}
-		}
-		else
-		{
+		}else{
 			ImageLoader.returnImages("door").draw(getWidth() - 250, (int)(Main.getScreenHeight()-290), 150, 230);
 		}
 		
@@ -118,96 +93,78 @@ public class Level3 extends Level{
 		Border.clearBorders();
 		SwitchManager.clearSwitches();
 		
-		if(keyGrabbed)
-		{
+		if(keyGrabbed){
 			doorTimer ++;
 		}
+		
 		generateWorld();
 	
-		for(pushBlock pB : pushBlockManager.getPushBlocks())
-		{
+		for(pushBlock pB : pushBlockManager.getPushBlocks()){
 			pB.update();
 		}
 		
-		for(Ice I : IceManager.getIce())
-		{
+		for(Ice I : IceManager.getIce()){
 			I.update();
 		}
 		
-		for(Switch s : SwitchManager.getSwitches())
-		{
-			if(Game.getP().getxPos() > s.getX() && Game.getP().getxPos() < s.getX()+ s.getWidth() 
-			&& Game.getP().getyPos() + Game.getP().getHeight() > s.getY()  && Game.getP().getyPos() < s.getY() +s.getHeight()) 
-			{
+		for(Switch s : SwitchManager.getSwitches()){
+			if(Game.getP().getxPos() > s.getX() && Game.getP().getxPos() < s.getX() + 
+					s.getWidth() && Game.getP().getyPos() + Game.getP().getHeight() > 
+					s.getY()  && Game.getP().getyPos() < s.getY() +s.getHeight()){
 				Game.switchg();
 			}
 		}
-		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen)
-		{
+		
+		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
 			isCompleted3 = true;
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().playerReset();
-			for(Ice I : IceManager.getIce())
-			{
+			
+			for(Ice I : IceManager.getIce()){
 				I.setSlide(false);
 			}
 		}
-		if(Game.getP().getPlayerShape().intersects(Key.getKeyHitBox()))
-		{
+		
+		if(Game.getP().getPlayerShape().intersects(Key.getKeyHitBox())){
 			keyGrabbed = true;
 			isDoorOpen = true;
 		}
-		for(Spike s : SpikeManager.getSpikes())
-		{
+		
+		for(Spike s : SpikeManager.getSpikes()){
 			s.update();
 		}
-		for(Spike s : SpikeManager.getSpikes())
-		{
-			if(Game.getP().getPlayerShape().intersects(s.getSpike()))
-			{
+		
+		for(Spike s : SpikeManager.getSpikes()){
+			if(Game.getP().getPlayerShape().intersects(s.getSpike())){
 				Game.getP().die();
 			}
 		}
 	}
 
-	public int getWidth() 
-	{
+	public int getWidth() {
 		return Main.getScreenWidth()*2;
 	}
 
-	public int getHeight() 
-	{
+	public int getHeight() {
 		return Main.getScreenHeight();
 	}
 
-	private void generateWorld() 
-	{		
+	private void generateWorld() {		
 		wallsAroundMapx2();
 		
-		
-		//door & key
-		if(!keyGrabbed)
-		{
+		if(!keyGrabbed){
 			Key.createKey(keyX, keyY, 180, 84);
 		}
-		Door.createDoor(getWidth() - 250, Main.getScreenHeight()-290, 150, 230);
 		
+		Door.createDoor(getWidth() - 250, Main.getScreenHeight()-290, 150, 230);
 		//ice
 		IceManager.createIce(icex, icey, iceWidth, iceHeight);
-		
 		//spike
 		SpikeManager.createSpike(Main.getScreenWidth()/2, getHeight()-132, 32, 32, false);
 		SpikeManager.createSpike(keyX, getHeight()-164, 64, 64, false);
-
 	}
-	public static boolean isCompleted3() {
-		return isCompleted3;
-	}
-	public static void setCompleted3(boolean b) 
-	{
+	
+	public static void setCompleted3(boolean b){
 		isCompleted3 = b;
-		
 	}
-
-
 }

@@ -26,78 +26,62 @@ import core.Game;
 import core.Main;
 
 public class Level5 extends Level{
+	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted5 = false;
+	//push blocks 
+	public static float pushx = 200, pushy = Main.getScreenHeight()-205;
 
-	private int id;
-
-	private static boolean isDoorOpen = false;
-	private static boolean keyGrabbed = false;
-
-	// pushblocks 
-	public static float pushx = 200;
-	public static float pushy = Main.getScreenHeight()-205;
-
-	public static boolean isCompleted5 = false;	
 	public int doorTimer = 0;
 
-	public Level5(int id)
-	{
-		this.id = id;
-	} 
-	public static void reset()
-	{
+	public static void reset(){
 		pushx = 200;
 		pushy = Main.getScreenHeight()-205;
 		isDoorOpen = false;
 		keyGrabbed = false;
 		Ice.reset();
 	}
-	public void render(Graphics g) throws SlickException {
-
+	
+	public void render(Graphics g) throws SlickException{
 		ImageLoader.returnImages("ghostBlockText").draw(100,200);
 		
-		for(Tile t : TileManager.getWhiteTiles()) 
-		{
+		for(Tile t : TileManager.getWhiteTiles()) {
 			t.render(g);
 		}
+		
 		g.setColor(Color.black);
-		for(Tile t : TileManager.getBlackTiles()) 
-		{
+		
+		for(Tile t : TileManager.getBlackTiles()) {
 			t.render(g);
 		}
-
 		//door & key
-		if(!keyGrabbed)
-		{
+		if(!keyGrabbed){
 			AnimationLoader.returnAnimation("key").draw(3200,Main.getScreenHeight()-220, 180, 180);
 		}
-		if(keyGrabbed)
-		{
-			if(doorTimer < 25)
-			{
+		
+		if(keyGrabbed){
+			if(doorTimer < 25){
 				AnimationLoader.returnAnimation("door").draw(3500, Main.getScreenHeight()-290, 150, 230);
 			}
-			if(doorTimer >= 25)
-			{
+			
+			if(doorTimer >= 25){
 				ImageLoader.returnImages("openDoor").draw(3500, Main.getScreenHeight()-290, 150, 230);
 			}
-		}
-		else
-		{
+		}else{
 			ImageLoader.returnImages("door").draw(3500, Main.getScreenHeight()-290, 150, 230);
 		}
-		for(Switch s : SwitchManager.getSwitches())
-		{
+		
+		for(Switch s : SwitchManager.getSwitches()){
 			s.render(g);
 		}
-		for(pushBlock pB : pushBlockManager.getPushBlocks())
-		{
+		
+		for(pushBlock pB : pushBlockManager.getPushBlocks()){
 			pB.render(g);
 		}
+		
 		g.setColor(new Color(113, 208, 227));
 		Cooldown.draw(g);
 	}
 
-	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
+	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException{
 		TileManager.clearTiles();
 		Border.clearBorders();
 		SpikeManager.clearSpikes();
@@ -150,22 +134,12 @@ public class Level5 extends Level{
 		}
 	}
 
-	public int getWidth() 
-	{
-		return Main.getScreenWidth()*2;
-	}
-
-	public int getHeight() 
-	{
-		return Main.getScreenHeight();
-	}
-
-	private void generateWorld() {
+	private void generateWorld(){
 		//spike
 		SpikeManager.createSpike(0,Main.getScreenHeight()-60, Main.getScreenWidth()*3,100, true);
 		SpikeManager.createSpike(0,0, Main.getScreenWidth()*3,60, true);
 		wallsAroundMapx2();
-		//pushblocks
+		//push blocks
 		pushBlockManager.createPushBlock(pushx, pushy, 105, 105);
 		pushBlockWalls();
 		//Floors
@@ -176,47 +150,35 @@ public class Level5 extends Level{
 		TileManager.createBorder(1700,0,1700,Main.getScreenHeight()/2 -100-2);
 		TileManager.createBorder(1700+Main.getScreenWidth()/2-300, Main.getScreenHeight(), 1700+Main.getScreenWidth()/2-300, Main.getScreenHeight()/2 +100+2);
 		TileManager.createBorder(1700+Main.getScreenWidth()/2-300, 0, 1700+Main.getScreenWidth()/2-300, Main.getScreenHeight()/2 -100-2);
-		//Tilesd
+		//Tiles
 		TileManager.createTile(1700, 0, Main.getScreenWidth()/2-300, Main.getScreenHeight()/2 -100, "white");
 		TileManager.createTile(1700, Main.getScreenHeight()/2 +100, Main.getScreenWidth()/2-300, Main.getScreenHeight(), "white");
 		//switches
 		SwitchManager.createSwitch(600,Main.getScreenHeight()-200, 100, 100,true);
 		SwitchManager.createSwitch(600,100, 100, 100,false);
-		//door & key
-		if(!keyGrabbed)
-		{
+		
+		if(!keyGrabbed){
 			Key.createKey(3200,Main.getScreenHeight()-220, 180, 84);
 		}
 		Door.createDoor(3500, Main.getScreenHeight()-290, 150, 230);
 	}
 
-	public static float getPushx() {
-		return pushx;
-	}
-
-	public static void setPushx(float x) {
+	public static void setPushx(float x){
 		Level5.pushx = x;
 	}
 
-	public static float getPushy() {
-		return pushy;
-	}
-
-	public static void setPushy(float y) {
+	public static void setPushy(float y){
 		Level5.pushy = y;
 	}
 
-
-	public static boolean isCompleted5() {
-		return isCompleted5;
-	}
-
-
-
-	public static void setCompleted5(boolean isCompleted5) {
+	public static void setCompleted5(boolean isCompleted5){
 		Level5.isCompleted5 = isCompleted5;
 	}
 
+	@Override
+	public int getWidth(){return 0;}
 
+	@Override
+	public int getHeight(){return 0;}
 }
 
