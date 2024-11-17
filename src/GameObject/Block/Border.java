@@ -1,8 +1,8 @@
 package GameObject.Block;
 
-import java.util.ArrayList;
 import org.newdawn.slick.geom.Shape;
 
+import java.util.ArrayList;
 
 public class Border {
 	private static ArrayList <Shape> Borders = new ArrayList<Shape>();

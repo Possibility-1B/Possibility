@@ -1,14 +1,13 @@
 package Menus;
 
+import core.*;
+import Media.*;
+
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
-
-import Media.*;
-import core.*;
-
 
 public class TitleLeave extends BasicGameState{
 	private int id;

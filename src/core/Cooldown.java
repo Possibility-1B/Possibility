@@ -1,10 +1,10 @@
 package core;
 
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
-
 import Media.AnimationLoader;
 import Media.ImageLoader;
+
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
 
 public class Cooldown {
 	public static void draw(Graphics g) throws SlickException{

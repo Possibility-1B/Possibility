@@ -1,5 +1,10 @@
 package Levels;
 
+import Media.AnimationLoader;
+import Media.ImageLoader;
+import core.Cooldown;
+import core.Game;
+import core.Main;
 import GameObject.Block.Border;
 import GameObject.Block.Door;
 import GameObject.Block.Switch;
@@ -13,11 +18,6 @@ import GameObject.Entity.Hazard.Stationary.IceManager;
 import GameObject.Entity.Hazard.Stationary.Spike;
 import GameObject.Entity.Hazard.Stationary.SpikeManager;
 import GameObject.Entity.Interactable.Key;
-import Media.AnimationLoader;
-import Media.ImageLoader;
-import core.Cooldown;
-import core.Game;
-import core.Main;
 
 import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;

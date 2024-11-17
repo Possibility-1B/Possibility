@@ -1,10 +1,10 @@
 package Media;
 
+import core.Main;
+
 import org.newdawn.slick.Color;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
-
-import core.Main;
 
 public class ImageLoader {	
 	private static Image cursor;

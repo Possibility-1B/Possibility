@@ -1,11 +1,12 @@
 package GameObject.Block;
 
+import Media.*;
+
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
-import java.util.*;
 
-import Media.*;
+import java.util.*;
 
 public class Door extends Block{
 	private int x, y, width, height;

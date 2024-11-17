@@ -1,6 +1,5 @@
 package GameObject.Block;
 
-import GameObject.GameObject;
 import Media.*;
 
 import org.newdawn.slick.Graphics;

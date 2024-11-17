@@ -1,6 +1,7 @@
 package GameObject.Block;
 
 import org.newdawn.slick.geom.*;
+
 import java.util.*;
 	
 public class Collision {

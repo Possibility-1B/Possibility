@@ -3,9 +3,10 @@ package GameObject.Entity.Hazard.Stationary;
 import core.*;
 import core.Game;
 
-import java.util.ArrayList;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
+
+import java.util.ArrayList;
 
 public class Ice{
 	private float icex, icey, width, height;

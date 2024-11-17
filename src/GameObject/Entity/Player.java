@@ -3,7 +3,6 @@ package GameObject.Entity;
 import Media.*;
 import core.*;
 import core.Game;
-import GameObject.*;
 import GameObject.Block.*;
 import GameObject.Entity.Hazard.Stationary.*;
 
@@ -11,11 +10,12 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
+
 import java.util.*;
 
 public class Player extends Entity{
 	//Movement (Up = jump) | p = press
-	private static boolean movingUp = false, movingDown = false, movingLeft = false,
+	private static boolean movingUp = false, movingLeft = false,
 			movingRight = false, pD, rD, pA, gSwitch;
 	
 	//Direction | r = release
@@ -72,7 +72,7 @@ public class Player extends Entity{
             yPos = Main.getScreenHeight()/2;
         }
         CUR_HEALTH = 100;
-        movingRight = movingLeft = movingUp = movingDown =  gSwitch = false;
+        movingRight = movingLeft = movingUp =  gSwitch = false;
         pD = rD = pA = pD = false;
         xVelocity = 0;
         vY = 0;

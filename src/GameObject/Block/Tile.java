@@ -1,8 +1,8 @@
 package GameObject.Block;
 
-
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
+
 import java.util.*;
 
 public class Tile extends Block{

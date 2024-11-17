@@ -2,10 +2,12 @@ package core;
 
 import Levels.*;
 import GameObject.Entity.*;
-import java.util.Timer;
-import java.util.TimerTask;
+
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Game extends BasicGameState{	
 	private int id;

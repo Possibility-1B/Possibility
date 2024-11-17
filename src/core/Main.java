@@ -1,12 +1,12 @@
 package core;
 
+import Menus.*;
+
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
-
-import Menus.*;
 
 public class Main extends StateBasedGame {
 	public final static int FRAMES_PER_SECOND = 60;

@@ -169,18 +169,6 @@ public class LevelSelector extends Level{
 			AnimationLoader.returnAnimation("credits").draw(credits.getX(),  getHeight()/2 , 150, 200);
 		}
 	}
-	
-	public void keyPressed(int key, char c){
-		if((key == Input.KEY_E) && Game.getP().getPlayerShape().intersects(lvl1)){
-			Game.setCurLevel(Game.getLevel1());
-		}
-	}
-	
-	public void mousePressed(int button, int x, int y){
-		if((button == Input.MOUSE_LEFT_BUTTON) && Game.getP().getPlayerShape().intersects(lvl1)){
-			Game.setCurLevel(Game.getLevel1());
-		}
-	}
 
 	public int getWidth(){
 		return Main.getScreenWidth()*2;

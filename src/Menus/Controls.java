@@ -1,5 +1,8 @@
 package Menus;
 
+import core.Main;
+import Media.ImageLoader;
+
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
@@ -10,9 +13,6 @@ import org.newdawn.slick.geom.Rectangle;
 import org.newdawn.slick.geom.Shape;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
-
-import Media.ImageLoader;
-import core.Main;
 
 public class Controls extends BasicGameState{
 	private int id;

@@ -6,6 +6,7 @@ import core.Game;
 
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
+
 import java.util.*;
 
 public class Spike{	

@@ -1,17 +1,16 @@
 package Levels;
 
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
-import org.newdawn.slick.geom.Line;
-import org.newdawn.slick.state.StateBasedGame;
-
+import core.Main;
 import GameObject.Block.Border;
 import GameObject.Block.TileManager;
 import GameObject.Block.pushBlock;
 import GameObject.Block.pushBlockManager;
 
-import core.Main;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Line;
+import org.newdawn.slick.state.StateBasedGame;
 
 public abstract class Level{
 	public abstract void render(Graphics g) throws SlickException;

@@ -1,11 +1,10 @@
 package Levels;
 
-import org.newdawn.slick.Color;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
-import org.newdawn.slick.state.StateBasedGame;
-
+import Media.AnimationLoader;
+import Media.ImageLoader;
+import core.Cooldown;
+import core.Game;
+import core.Main;
 import GameObject.Block.Border;
 import GameObject.Block.Door;
 import GameObject.Block.Switch;
@@ -19,11 +18,12 @@ import GameObject.Entity.Hazard.Stationary.IceManager;
 import GameObject.Entity.Hazard.Stationary.Spike;
 import GameObject.Entity.Hazard.Stationary.SpikeManager;
 import GameObject.Entity.Interactable.Key;
-import Media.AnimationLoader;
-import Media.ImageLoader;
-import core.Cooldown;
-import core.Game;
-import core.Main;
+
+import org.newdawn.slick.Color;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.state.StateBasedGame;
 
 public class Level4 extends Level{	
 	private static boolean isDoorOpen = false;

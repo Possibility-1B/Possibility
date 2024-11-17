@@ -1,17 +1,17 @@
 package Menus;
 
-import org.lwjgl.input.Mouse;
-import org.newdawn.slick.*;
-import org.newdawn.slick.geom.*;
-import org.newdawn.slick.state.BasicGameState;
-import org.newdawn.slick.state.StateBasedGame;
-
 import Media.*;
 import core.*;
 import core.Game;
 import Levels.*;
 import GameObject.Block.*;
 import GameObject.Entity.Hazard.Stationary.*;
+
+import org.lwjgl.input.Mouse;
+import org.newdawn.slick.*;
+import org.newdawn.slick.geom.*;
+import org.newdawn.slick.state.BasicGameState;
+import org.newdawn.slick.state.StateBasedGame;
 
 public class Title extends BasicGameState{
 	private int id;
