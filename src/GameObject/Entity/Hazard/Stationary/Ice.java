@@ -6,13 +6,10 @@ import core.Game;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
 
-import java.util.ArrayList;
-
 public class Ice{
 	private float icex, icey, width, height;
 	public static boolean slide = false;
 	protected Shape iceShape;
-	private static ArrayList<Ice> ices = new ArrayList<Ice>();
 	
 	public Ice(float x, float y, float width, float height){
 		this.icex = x;
@@ -45,6 +42,7 @@ public class Ice{
 			Helper.i = 0;
 		}
 	}
+	
 	public void slide() {
 		if((Game.getP().getxPos() >= icex && Game.getP().getxPos() <= (icex + width)) 
 			&& (Game.getP().getyPos() > icey - Game.getP().getHeight() -1)){
@@ -56,10 +54,6 @@ public class Ice{
 		}else{
 			slide = false;
 		}
-	}
-	
-	public static ArrayList<Ice> getIces(){
-		return ices;
 	}
 	
 	public static boolean isSlide(){

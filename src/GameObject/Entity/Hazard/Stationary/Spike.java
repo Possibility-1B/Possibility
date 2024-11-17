@@ -7,8 +7,6 @@ import core.Game;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
 
-import java.util.*;
-
 public class Spike{	
 	private float x, y, width, height;
 	private boolean flipped;
@@ -16,9 +14,7 @@ public class Spike{
 	public static boolean fallen = false, fall = false;
 	
 	protected Shape spikeShape;
-	
-	private static ArrayList<Spike> spikes = new ArrayList<Spike>();
-	
+		
 	public Spike(float x, float y, float width, float height, boolean flipped){
 		this.x = x;
 		this.y = y;
@@ -41,8 +37,7 @@ public class Spike{
 	}
 
 	public void render(Graphics g) throws SlickException{
-		if(spikeShape == null )
-		{
+		if(spikeShape == null){
 			return;
 		}
 		
@@ -71,14 +66,6 @@ public class Spike{
 		}
 	}
 	
-	public boolean dropMovingLeft(int spikeX){
-		if(Game.getP().getxPos() + 25 > (spikeX + (width/2)) - 50){
-			return true;
-		}else{
-			return false;
-		}
-	}
-	
 	public Shape getSpike(){
 		return spikeShape;
 	}
@@ -97,9 +84,5 @@ public class Spike{
 
 	public float getHeight(){
 		return height;
-	}
-
-	public static ArrayList<Spike> getSpikes() {
-		return spikes;
 	}
 }

@@ -31,7 +31,7 @@ public class Level6 extends Level{
 	private static float platformX, platformV, elevatorY, elevatorVy,
 		elevatorX, elevatorVx;
 	
-	public static boolean isCompleted6 = false;	
+	private static boolean isCompleted = false;	
 	public int doorTimer = 0;
 	
 	public Level6(){
@@ -140,7 +140,7 @@ public class Level6 extends Level{
 		}
 	
 		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
-			isCompleted6 = true;
+			isCompleted = true;
 			Game.getP().playerReset();
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().setxPos(150);
@@ -191,9 +191,13 @@ public class Level6 extends Level{
 		}
 		Door.createDoor(Main.getScreenWidth() * 2, Main.getScreenHeight()/2, 150, 230);
 	}
+	
+	public static boolean getCompleted(){
+		return isCompleted;
+	}
 
-	public static void setCompleted6(boolean isCompleted6){
-		Level6.isCompleted6 = isCompleted6;
+	public static void setCompleted(boolean isCompleted){
+		Level6.isCompleted = isCompleted;
 	}
 
 	public static void setPushx(float x){

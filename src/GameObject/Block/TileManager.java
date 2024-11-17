@@ -7,11 +7,6 @@ import java.util.*;
 public class TileManager{
 	protected static ArrayList<Tile> whiteTiles = new ArrayList<Tile>();
 	protected static ArrayList<Tile> blackTiles = new ArrayList<Tile>();
-	
-	public TileManager() {
-		whiteTiles = Tile.getWhiteTiles();
-		blackTiles = Tile.getBlackTiles();
-	}
 
 	public static void clearTiles(){
 		whiteTiles.clear();

@@ -42,7 +42,8 @@ public class Cooldown {
 				AnimationLoader.returnAnimation("cooldown").restart();
 			}
 		}else{
-			if(Game.timer <= 90){AnimationLoader.returnAnimation("cooldown").draw(Game.getP().getxPos() - Main.getScreenWidth()/2 + 110, Main.getScreenHeight() - 90, 75,75);
+			if(Game.timer <= 90){
+				AnimationLoader.returnAnimation("cooldown").draw(Game.getP().getxPos() - Main.getScreenWidth()/2 + 110, Main.getScreenHeight() - 90, 75,75);
 			}else{
 				AnimationLoader.returnAnimation("cooldown").restart();
 				ImageLoader.returnImages("cooldown").draw(Game.getP().getxPos() - 

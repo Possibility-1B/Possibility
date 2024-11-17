@@ -4,7 +4,7 @@ import org.newdawn.slick.geom.Shape;
 
 import java.util.ArrayList;
 
-public class Border {
+public class Border{
 	private static ArrayList <Shape> Borders = new ArrayList<Shape>();
 	
 	public static ArrayList<Shape> getBorders(){

@@ -3,7 +3,6 @@ package Menus;
 import Media.*;
 import core.*;
 import core.Game;
-import Levels.*;
 import GameObject.Block.*;
 import GameObject.Entity.Hazard.Stationary.*;
 
@@ -89,8 +88,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(false);
-			Level2.setCompleted2(false);
 			Game.setCurLevel(Game.getLevel1());
 			Game.getP().playerReset();
 	    }  
@@ -101,8 +98,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(false);
 			Game.setCurLevel(Game.getLevel2());
 			Game.getP().playerReset();
 	    }  
@@ -113,9 +108,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(true);
-			Level3.setCompleted3(false);
 			Game.setCurLevel(Game.getLevel3());
 			Game.getP().playerReset();
 	    }
@@ -126,11 +118,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(true);
-			Level3.setCompleted3(true);
-			Level4.setCompleted4(false);
-
 			Game.setCurLevel(Game.getLevel4());
 			Game.getP().playerReset();
 	    }
@@ -141,12 +128,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(true);
-			Level3.setCompleted3(true);
-			Level4.setCompleted4(true);
-			Level5.setCompleted5(false);
-
 			Game.setCurLevel(Game.getLevel5());
 			Game.getP().playerReset();
 	    }
@@ -157,13 +138,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(true);
-			Level3.setCompleted3(true);
-			Level4.setCompleted4(true);
-			Level5.setCompleted5(true);
-			Level6.setCompleted6(false);
-
 			Game.setCurLevel(Game.getLevel6());
 			Game.getP().playerReset();
 	    }
@@ -174,14 +148,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(true);
-			Level3.setCompleted3(true);
-			Level4.setCompleted4(true);
-			Level5.setCompleted5(true);
-			Level6.setCompleted6(true);
-			Level7.setCompleted7(false);
-
 			Game.setCurLevel(Game.getLevel7());
 			Game.getP().playerReset();
 	    }
@@ -192,15 +158,6 @@ public class Death extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(true);
-			Level2.setCompleted2(true);
-			Level3.setCompleted3(true);
-			Level4.setCompleted4(true);
-			Level5.setCompleted5(true);
-			Level6.setCompleted6(true);
-			Level7.setCompleted7(true);
-			Level8.setCompleted8(false);
-
 			Game.setCurLevel(Game.getLevel8());
 			Game.getP().playerReset();
 	    }

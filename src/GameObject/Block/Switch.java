@@ -6,13 +6,9 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.*;
 
-import java.util.*;
-
-
 public class Switch extends Block{
 	private float x, y, width, height;
 	private boolean up;
-	private static ArrayList<Switch> Switches = new ArrayList<Switch>();
 	private static Shape SwitchHitBox;
 	
 	public Switch(float x, float y, float width, float height, boolean up){
@@ -51,10 +47,6 @@ public class Switch extends Block{
 
 	public float getHeight(){
 		return height;
-	}
-
-	public static ArrayList<Switch> getSwitches(){
-		return Switches;
 	}
 
 	@Override

@@ -9,6 +9,7 @@ public class Tile extends Block{
 	private float x, y, width, height;
 	protected String color;
 	protected Shape tileShape;
+	
 	private static ArrayList<Tile> BlackTiles = new ArrayList<Tile>();
 	private static ArrayList<Tile> WhiteTiles = new ArrayList<Tile>();
 	

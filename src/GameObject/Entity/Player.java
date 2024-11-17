@@ -101,7 +101,6 @@ public class Player extends Entity{
 		}
 	}
 
-	
 	private void checkCollisionY(){
 		if(Collision.Collisions(playerShape) == null){
 			return;
@@ -246,6 +245,7 @@ public class Player extends Entity{
 		playerReset();
 		CUR_HEALTH = 0;
 	}
+	
 	public void keyPressed(int key, char c){
 		//code happens every time the user presses a key
 		if(key == Input.KEY_SPACE || key == Input.KEY_W || key == Input.KEY_UP){
@@ -261,8 +261,7 @@ public class Player extends Entity{
 			rD = false;
 		}
 		
-		if(key == Input.KEY_A || key == Input.KEY_LEFT)
-		{
+		if(key == Input.KEY_A || key == Input.KEY_LEFT){
 			setFacingRight(false);
 			setMovingRight(false);
 			setFacingLeft(true);
@@ -341,7 +340,6 @@ public class Player extends Entity{
 	public float getxVelocity(){
 		return xVelocity;
 	}
-
 
 	public boolean getgSwitch(){
 		return gSwitch;

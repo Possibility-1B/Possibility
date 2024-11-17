@@ -100,8 +100,7 @@ public class Game extends BasicGameState{
 	 	p.update();
 	}
 
-	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
-	{
+	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException{
 		if(curLevel != credits){
 			if(curLevel == levelSelect || curLevel == level3 || curLevel == level5){
 				if(p.getxPos() >= Main.getScreenWidth()*2 -Main.getScreenWidth()/2-100){
@@ -153,38 +152,38 @@ public class Game extends BasicGameState{
 				curLevel = level1;
 				p.playerReset();
 			}
-			if(p.getxPos() > LevelSelector.getLvl2().getMinX() &&  p.getxPos() <
-					LevelSelector.getLvl2().getMaxX()){
+			if(Level1.getCompleted() && p.getxPos() > LevelSelector.getLvl2().getMinX() 
+					&&  p.getxPos() < LevelSelector.getLvl2().getMaxX()){
 				curLevel = level2;
 				p.playerReset();
 			}	
-			if(p.getxPos() > LevelSelector.getLvl3().getMinX() &&  p.getxPos() < 
-					LevelSelector.getLvl3().getMaxX()){
+			if(Level2.getCompleted() && p.getxPos() > LevelSelector.getLvl3().getMinX() 
+					&&  p.getxPos() < LevelSelector.getLvl3().getMaxX()){
 				curLevel = level3;
 				p.playerReset();
 			}
-			if(p.getxPos() > LevelSelector.getLvl4().getMinX() &&  p.getxPos() < 
-					LevelSelector.getLvl4().getMaxX()){
+			if(Level3.getCompleted() && p.getxPos() > LevelSelector.getLvl4().getMinX()
+					&&  p.getxPos() < LevelSelector.getLvl4().getMaxX()){
 				curLevel = level4;
 				p.playerReset();
 			}
-			if(p.getxPos() > LevelSelector.getLvl5().getMinX() &&  p.getxPos() < 
-					LevelSelector.getLvl5().getMaxX()){
+			if(Level4.getCompleted() && p.getxPos() > LevelSelector.getLvl5().getMinX() 
+					&&  p.getxPos() < LevelSelector.getLvl5().getMaxX()){
 				p.playerReset();
 				curLevel = level5;
 			}
-			if(p.getxPos() > LevelSelector.getLvl6().getMinX() &&  p.getxPos() < 
-					LevelSelector.getLvl6().getMaxX()){
+			if(Level5.getCompleted() && p.getxPos() > LevelSelector.getLvl6().getMinX()
+					&&  p.getxPos() < LevelSelector.getLvl6().getMaxX()){
 				curLevel = level6;
 				p.playerReset();
 			}
-			if(p.getxPos() > LevelSelector.getLvl7().getMinX() &&  p.getxPos() < 
-					LevelSelector.getLvl7().getMaxX()){
+			if(Level6.getCompleted() && p.getxPos() > LevelSelector.getLvl7().getMinX()
+					&&  p.getxPos() < LevelSelector.getLvl7().getMaxX()){
 				curLevel = level7;
 				p.playerReset();
 			}
-			if(p.getxPos() > LevelSelector.getLvl8().getMinX() &&  p.getxPos() < 
-					LevelSelector.getLvl8().getMaxX()){
+			if(Level7.getCompleted() && p.getxPos() > LevelSelector.getLvl8().getMinX() 
+					&&  p.getxPos() < LevelSelector.getLvl8().getMaxX()){
 				curLevel = level8;
 				p.playerReset();
 			}
@@ -242,7 +241,6 @@ public class Game extends BasicGameState{
 	public static Level getLevel7(){
 		return level7;
 	}
-
 
 	public static Level getLevel8(){
 		return level8;

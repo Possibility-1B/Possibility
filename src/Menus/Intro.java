@@ -2,7 +2,6 @@ package Menus;
 
 import Media.*;
 import core.*;
-import core.Game;
 
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
@@ -38,10 +37,6 @@ public class Intro extends BasicGameState{
 		if(timer > 550){
 			sbg.enterState(Main.TITLE_ID);
 		}
-	}
-	
-	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException{
-		Game.setCurLevel(Game.getLevelSelect());
 	}
 
 	public void keyPressed(int key, char c){

@@ -120,8 +120,14 @@ public class Title extends BasicGameState{
 			TileManager.clearTiles();
 			Border.clearBorders();
 			SpikeManager.clearSpikes();
-			Level1.setCompleted1(false);
-			Level2.setCompleted2(false);
+			Level1.setCompleted(false);
+			Level2.setCompleted(false);
+			Level3.setCompleted(false);
+			Level4.setCompleted(false);
+			Level5.setCompleted(false);
+			Level6.setCompleted(false);
+			Level7.setCompleted(false);
+			Level8.setCompleted(false);
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().playerReset();
 	    }  

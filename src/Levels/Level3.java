@@ -26,7 +26,7 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class Level3 extends Level{	
-	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted3 = false;	
+	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted = false;	
 	
 	private static float icex = Main.getScreenWidth() - 500, icey = 980, iceWidth = 1300,
 			iceHeight = Main.getScreenHeight();
@@ -116,7 +116,7 @@ public class Level3 extends Level{
 		}
 		
 		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
-			isCompleted3 = true;
+			isCompleted = true;
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().playerReset();
 			
@@ -164,7 +164,11 @@ public class Level3 extends Level{
 		SpikeManager.createSpike(keyX, getHeight()-164, 64, 64, false);
 	}
 	
-	public static void setCompleted3(boolean b){
-		isCompleted3 = b;
+	public static boolean getCompleted(){
+		return isCompleted;
+	}
+	
+	public static void setCompleted(boolean isCompleted){
+		Level3.isCompleted = isCompleted;
 	}
 }

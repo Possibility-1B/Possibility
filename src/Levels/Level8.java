@@ -30,7 +30,7 @@ public class Level8 extends Level{
 	
 	private static float platformX, platformV, elevatorY, elevatorVy, elevatorX, elevatorVx;
 	
-	public static boolean isCompleted8 = false;	
+	private static boolean isCompleted = false;	
 	
 	public int doorTimer = 0;
 	
@@ -142,7 +142,7 @@ public class Level8 extends Level{
 			}
 		
 		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
-			isCompleted8 = true;
+			isCompleted = true;
 			Game.getP().playerReset();
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().setxPos(150);
@@ -262,9 +262,13 @@ public class Level8 extends Level{
 		}
 		Door.createDoor(3680, Main.getScreenHeight() -330, 150, 230);
 	}
+	
+	public static boolean getCompleted(){
+		return isCompleted;
+	}
 
-	public static void setCompleted8(boolean isCompleted8) {
-		Level8.isCompleted8 = isCompleted8;
+	public static void setCompleted(boolean isCompleted) {
+		Level8.isCompleted = isCompleted;
 	}
 
 	public static void setPushx(float x) {

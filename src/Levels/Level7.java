@@ -24,7 +24,7 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class Level7 extends Level{	
-	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted7 = false;	
+	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted = false;	
 	//push blocks 
 	public static float pushx = 200, pushy = Main.getScreenHeight()-205;
 	
@@ -106,7 +106,7 @@ public class Level7 extends Level{
 		}
 		
 		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
-			isCompleted7 = true;
+			isCompleted = true;
 			Game.getP().playerReset();
 			Game.setCurLevel(Game.getLevelSelect());
 			Game.getP().setxPos(500);
@@ -167,9 +167,13 @@ public class Level7 extends Level{
 	public static void setPushy(float y) {
 		Level7.pushy = y;
 	}
+	
+	public static boolean getCompleted(){
+		return isCompleted;
+	}
 
-	public static void setCompleted7(boolean isCompleted7) {
-		Level7.isCompleted7 = isCompleted7;
+	public static void setCompleted(boolean isCompleted7) {
+		Level7.isCompleted = isCompleted7;
 	}
 
 	@Override

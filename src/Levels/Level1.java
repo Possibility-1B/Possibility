@@ -12,12 +12,10 @@ import org.newdawn.slick.state.*;
 import org.newdawn.slick.*;
 
 public class Level1 extends Level {
-	private static boolean isDoorOpen = false, keyGrabbed = false;
+	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted = false;	
 
 	public static int spikey1 = Main.getScreenHeight() - 150, spikey2 = 100,
 			spikex1 = 950, spikex2 = 800;
-	
-	public static boolean isCompleted1 = false;	
 	
 	public int doorTimer = 0;
 
@@ -59,7 +57,7 @@ public class Level1 extends Level {
 		}
 		  
 		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
-			isCompleted1 = true;
+			isCompleted = true;
 			Player.xPos = 500;
 			Player.yPos = Main.getScreenHeight()/2;
 			Game.getP().playerReset();
@@ -133,9 +131,13 @@ public class Level1 extends Level {
 	public int getWidth() {
 		return Main.getScreenWidth()*3;
 	}
+	
+	public static boolean getCompleted(){
+		return isCompleted;
+	}
 
-	public static void setCompleted1(boolean isCompleted1){
-		Level1.isCompleted1 = isCompleted1;
+	public static void setCompleted(boolean isCompleted){
+		Level1.isCompleted = isCompleted;
 	}
 
 	private void generateWorld(){
