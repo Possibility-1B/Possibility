@@ -42,10 +42,25 @@ This repository contains a game I developed during my high school years. It was 
 
 Here are a few screenshots to give you a preview of the game:
 
-![Screenshot 1](./images/screenshot1.png)
+![Screenshot 1](https://github.com/jhauptma12357/images/blob/main/Possiblility/Company%20Logo.png)
 *Description of this screenshot.*
 
-![Screenshot 2](./images/screenshot2.png)
+![Screenshot 2](https://github.com/jhauptma12357/images/blob/main/Possiblility/Game%20Logo.png)
+*Description of this screenshot.*
+
+![Screenshot 3](https://github.com/jhauptma12357/images/blob/main/Possiblility/dead.png)
+*Description of this screenshot.*
+
+![Screenshot 4](https://github.com/jhauptma12357/images/blob/main/Possiblility/level4.png)
+*Description of this screenshot.*
+
+![Screenshot 5](https://github.com/jhauptma12357/images/blob/main/Possiblility/level8.png)
+*Description of this screenshot.*
+
+![Screenshot 6](https://github.com/jhauptma12357/images/blob/main/Possiblility/levelselect.png)
+*Description of this screenshot.*
+
+![Screenshot 7](https://github.com/jhauptma12357/images/blob/main/Possiblility/levelselect2.png)
 *Description of this screenshot.*
 
 ---
