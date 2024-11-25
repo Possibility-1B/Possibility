@@ -9,16 +9,16 @@ import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class Main extends StateBasedGame {
-	public final static int FRAMES_PER_SECOND = 60;
-	public static final int LOGO_ID = 0, TITLE_ID = 1, CONTROLS_ID = 2, GAME_ID  = 3,
-			DEATH_ID = 5, TITLELEAVE_ID = 6;
+	private static final int FRAMES_PER_SECOND = 60;
+	public static final int LOGO_ID = 0, TITLE_ID = 1, CONTROLS_ID = 2, GAME_ID = 3, DEATH_ID = 5,
+			TITLELEAVE_ID = 6;
+
+	private BasicGameState logo, title, controls, game, death, titleLeave;
 	private static AppGameContainer appgc;
-	
-    private BasicGameState logo, title, controls, game, death, titleLeave;
-    
-  public Main(String name){
+
+	private Main(String name) {
 		super(name);
-	
+
 		logo = new Intro(LOGO_ID);
 		title = new Title(TITLE_ID);
 		controls = new Controls(CONTROLS_ID);
@@ -27,19 +27,19 @@ public class Main extends StateBasedGame {
 		titleLeave = new TitleLeave(TITLELEAVE_ID);
 	}
 
-	public static int getScreenWidth(){
+	public static int getScreenWidth() {
 		return appgc.getScreenWidth();
 	}
-	
-	public static int getScreenHeight(){
+
+	public static int getScreenHeight() {
 		return appgc.getScreenHeight();
 	}
-	
-	public static GameContainer getGameContainer(){
+
+	public static GameContainer getGameContainer() {
 		return appgc;
 	}
-	
-	public void initStatesList(GameContainer gc) throws SlickException{
+
+	public void initStatesList(GameContainer gc) throws SlickException {
 		addState(logo);
 		addState(title);
 		addState(controls);
@@ -48,16 +48,16 @@ public class Main extends StateBasedGame {
 		addState(titleLeave);
 	}
 
-	public static void main(String[] args){
-		try{
+	public static void main(String[] args) {
+		try {
 			appgc = new AppGameContainer(new Main("My First Project"));
 			System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
-		
+
 			appgc.setDisplayMode(appgc.getScreenWidth(), appgc.getScreenHeight(), false);
 			appgc.setTargetFrameRate(FRAMES_PER_SECOND);
 			appgc.start();
 			appgc.setVSync(true);
-		}catch (SlickException e){
+		} catch (SlickException e) {
 			e.printStackTrace();
 		}
 	}

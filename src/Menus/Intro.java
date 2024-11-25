@@ -6,44 +6,43 @@ import core.*;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
 
-public class Intro extends BasicGameState{
-	private int id;
+public class Intro extends BasicGameState {
+	private int id, timer;
 	private StateBasedGame sbg;
-	int timer;
 
-	public Intro(int id){
+	public Intro(int id) {
 		this.id = id;
 	}
-	
-	public int getID(){
-		return id;		
+
+	public int getID() {
+		return id;
 	}
-	
-	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException{
+
+	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
 		ImageLoader.loadImages();
 		AnimationLoader.loadAnimations();
 		Main.getGameContainer().setMouseCursor(ImageLoader.getCursor(), 1, 1);
 
 		this.sbg = sbg;
 	}
-	
-	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException{	
+
+	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
 		timer++;
 	}
 
-	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException{
+	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
 		ImageLoader.getImages("logo");
-		
-		if(timer > 550){
+
+		if (timer > 550) {
 			sbg.enterState(Main.TITLE_ID);
 		}
 	}
 
-	public void keyPressed(int key, char c){
+	public void keyPressed(int key, char c) {
 		sbg.enterState(Main.TITLE_ID);
 	}
-	
-	public void mousePressed(int button, int x, int y){
+
+	public void mousePressed(int button, int x, int y) {
 		sbg.enterState(Main.TITLE_ID);
 	}
 }
