@@ -4,8 +4,8 @@ import Media.*;
 import core.*;
 import core.Game;
 import GameObject.Block.*;
-import GameObject.Entity.*;
-import GameObject.Entity.Hazard.Stationary.*;
+import GameObject.Entity.Hazard.Stationary.Spike;
+import GameObject.Entity.Hazard.Stationary.SpikeManager;
 import GameObject.Entity.Interactable.*;
 
 import org.newdawn.slick.state.*;
@@ -13,12 +13,10 @@ import org.newdawn.slick.*;
 
 public class Level1 extends Level {
 	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted = false;	
-
-	public static int spikey1 = Main.getScreenHeight() - 150, spikey2 = 100,
+	private int doorTimer = 0;
+	private static int spikey1 = Main.getScreenHeight() - 150, spikey2 = 100,
 			spikex1 = 950, spikex2 = 800;
 	
-	public int doorTimer = 0;
-
 	public static void reset(){
 		spikey1 = Main.getScreenHeight() - 150;
 		spikey2 = 100;
@@ -58,8 +56,8 @@ public class Level1 extends Level {
 		  
 		if(Game.getP().getPlayerShape().intersects(Door.getDoorHitBox()) && isDoorOpen){
 			isCompleted = true;
-			Player.xPos = 500;
-			Player.yPos = Main.getScreenHeight()/2;
+			Game.getP().setxPos(500);
+			Game.getP().setyPos(Main.getScreenHeight()/2);
 			Game.getP().playerReset();
 			Game.setCurLevel(Game.getLevelSelect());
 		}
