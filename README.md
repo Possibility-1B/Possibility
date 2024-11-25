@@ -1,4 +1,4 @@
-# My High School Game Project: [Game Title]
+# Possibility
 
 This repository contains a game I developed during my high school years. It was a great learning experience and an opportunity to experiment with game mechanics, programming, and design. As I continue to improve my skills throughout college, I hope this project serves as a benchmark to track my growth in game development and coding.
 
@@ -96,11 +96,3 @@ I am a computer science student passionate about game development and software e
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
----
-
-## 👥 Contact
-
-Feel free to reach out if you have any questions, suggestions, or feedback!
-
-- Email: [your-email@example.com]
-- GitHub: [github.com/yourusername]
