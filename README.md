@@ -96,11 +96,3 @@ I am a computer science student passionate about game development and software e
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
----
-
-## 👥 Contact
-
-Feel free to reach out if you have any questions, suggestions, or feedback!
-
-- Email: [your-email@example.com]
-- GitHub: [github.com/yourusername]
