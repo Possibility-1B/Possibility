@@ -25,8 +25,8 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class Level8 extends Level {
 	private int doorTimer = 0;
-	private static float pushx = 3600, pushy = Main.getScreenHeight() - 210;
 	private static boolean isDoorOpen = false, keyGrabbed = false;
+	private static float pushx = 3600, pushy = Main.getScreenHeight() - 210;
 	private static float platformX, platformV, elevatorY, elevatorVy, elevatorX, elevatorVx;
 
 	public Level8() {

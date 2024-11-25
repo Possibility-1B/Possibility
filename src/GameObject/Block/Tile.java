@@ -6,7 +6,6 @@ import org.newdawn.slick.geom.*;
 public class Tile extends Block {
 	private String color;
 	private Shape tileShape;
-
 	private float x, y, width, height;
 
 	Tile(float xS, float yS, float widthS, float HeightS, String color) {

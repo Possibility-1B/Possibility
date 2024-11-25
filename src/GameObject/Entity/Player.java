@@ -12,11 +12,9 @@ import org.newdawn.slick.geom.*;
 import java.util.*;
 
 public class Player extends Entity {
-
-	private boolean facingRight = false, facingLeft = false, rA;
-	// Movement (Up = jump) | p = press
-	private boolean movingUp = false, movingLeft = false, movingRight = false, pD, rD, pA, gSwitch;
-	// Direction | r = release
+	private boolean facingRight = false, facingLeft = false;
+	private boolean movingUp = false, movingLeft = false, movingRight = false, pD, rD, pA, rA,
+			gSwitch; // r = release | p = press
 	private int CUR_HEALTH = 100, height = 100;
 	private int width = 50;
 	private float xPos, yPos, xVelocity, vY;

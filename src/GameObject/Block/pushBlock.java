@@ -11,10 +11,9 @@ import java.util.*;
 
 public class pushBlock extends Block {
 	private float width, height, vY = 0;
+	private Shape pushBlockHitBox;
 	private ArrayList<Shape> collisionList = new ArrayList<Shape>();
 	private static float x, y;
-
-	private Shape pushBlockHitBox;
 	private static ArrayList<pushBlock> pushBlocks = new ArrayList<pushBlock>();
 
 	pushBlock(float x, float y, float width, float height) {

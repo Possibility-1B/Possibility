@@ -26,8 +26,7 @@ import org.newdawn.slick.state.StateBasedGame;
 public class Level7 extends Level {
 	private int doorTimer = 0;
 	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted = false;
-	// push blocks
-	private static float pushx = 200, pushy = Main.getScreenHeight() - 205;
+	private static float pushx = 200, pushy = Main.getScreenHeight() - 205; // push block
 
 	public static void reset() {
 		isDoorOpen = false;
