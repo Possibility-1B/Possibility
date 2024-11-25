@@ -11,10 +11,10 @@ import java.util.TimerTask;
 
 public class Game extends BasicGameState {
 	static int timer = 91;
+	
+	private int id;
 	private static Player p;
 	private static TimerTask task;
-
-	private int id;
 	private static int gravSwitcher;
 	private static Level levelSelect, level1, level2, level3, level4, level5, level6, level7,
 			level8, credits, curLevel = null;

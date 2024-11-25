@@ -14,7 +14,6 @@ public class Level2 extends Level {
 	private int doorTimer = 0, num1 = 5, num2 = 10;
 	private int platformx = Main.getScreenWidth() / 2, platformy = Main.getScreenHeight() / 2;
 	private int platformx1 = Main.getScreenWidth(), platformy1 = Main.getScreenHeight() / 2 - 50;
-
 	private static boolean isDoorOpen = false, keyGrabbed = false, isCompleted = false;
 
 	public static void reset() {

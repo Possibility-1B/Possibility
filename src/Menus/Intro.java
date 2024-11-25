@@ -31,7 +31,7 @@ public class Intro extends BasicGameState {
 	}
 
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
-		ImageLoader.getImages("logo");
+		ImageLoader.getLogoImage();
 
 		if (timer > 550) {
 			sbg.enterState(Main.TITLE_ID);

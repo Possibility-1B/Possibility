@@ -12,7 +12,7 @@ public class Credits extends Level {
 
 	public void render(Graphics g) throws SlickException {
 		g.setColor(new Color(197, 197, 197));
-		ImageLoader.returnImages("Credits").draw(0, -scrollTimer);
+		ImageLoader.returnImages("credits").draw(0, -scrollTimer);
 
 		if (timer >= 3240) {
 			ImageLoader.returnImages("thanks").draw(150, Main.getScreenHeight() / 2 - 300);
