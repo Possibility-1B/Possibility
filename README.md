@@ -2,7 +2,7 @@
 
 This repository contains a game I developed during my high school years. It was a great learning experience and an opportunity to experiment with game mechanics, programming, and design. As I continue to improve my skills throughout college, I hope this project serves as a benchmark to track my growth in game development and coding.
 
-## 🗎 Project Description
+## 📜 Project Description
 
 [Game Title] is a [type of game: platformer, puzzle, adventure, etc.] where the player [brief description of gameplay mechanics and objective]. The goal of the game is to [what the player needs to achieve] while navigating through various levels filled with challenges and obstacles.
 
@@ -14,7 +14,7 @@ This repository contains a game I developed during my high school years. It was 
 
 ---
 
-🂿 ## How to Play
+## 🃏 How to Play
 
 1. **Download/Clone the Repository**:
     - Clone this repository using Git:
@@ -42,7 +42,7 @@ This repository contains a game I developed during my high school years. It was 
 
 ---
 
-## 🙭 Future Improvements
+## 🚀 Future Improvements
 
 While this project served as a great learning experience, there are many areas where I plan to improve or expand on it in the future:
 
@@ -54,7 +54,7 @@ While this project served as a great learning experience, there are many areas w
 
 ---
 
-## 🕮 Libraries 
+## 📚 Libraries 
 <pre
     <b>
 • Slick2D           • LWJGL (core | util | applet)           • IBXM           • JInput           • JNLP   
