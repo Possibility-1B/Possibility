@@ -4,7 +4,7 @@ _Possibility_ is a 2D game developed as part of a themed senior high school proj
 
 ## 📜 Project Description
 
-_Possibility_is a 2D side scroller and platformer consisting of 8 levels where the player has to obtain a key to pass through the level door. 
+_Possibility_ is a 2D side scroller and platformer consisting of 8 levels where the player has to obtain a key to pass through the level door. 
 
 ### Features:
 - **Gravity Switch**: A box interactable with an arrow indicating which way gravity will be flipped. There is a cooldown at the bottom left of the screen that shows when you can flip gravity again.
