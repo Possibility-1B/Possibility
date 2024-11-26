@@ -2,7 +2,7 @@
 
 _Possibility_ is a 2D game developed as part of a themed senior high school project (2022) by a team of three collaborators. The theme was duality which we translated into the game using Java and Slick2D through the mechanics of reversing gravity.
 
-## 📜 Project Description
+## 📜 Description
 
 _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where the player has to obtain a key to pass through the level door. 
 
