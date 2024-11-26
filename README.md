@@ -1,6 +1,6 @@
 # Possibility
 
-This repository contains a game I developed during my high school years. It was a great learning experience and an opportunity to experiment with game mechanics, programming, and design. As I continue to improve my skills throughout college, I hope this project serves as a benchmark to track my growth in game development and coding.
+_Possibility_ is a 2D game developed as part of a themed senior high school project (2022) by a team of three collaborators. The theme was duality which we translated into the game using Java and Slick2D through the mechanics of reversing gravity.
 
 ## 📜 Project Description
 
