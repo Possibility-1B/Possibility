@@ -16,25 +16,15 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 
 ## 🃏 How to Play
 
-1. **Download/Clone the Repository**:
-    - Clone this repository using Git:
-      ```bash
-      git clone https://github.com/yourusername/your-project-name.git
-      ```
-    - Alternatively, you can download the repository as a ZIP file and extract it.
+**Movement Controls**:
 
-2. **Install Dependencies**:
-    - [Optional] If the game uses a game engine or libraries (e.g., Unity, Godot, Pygame, etc.), follow the setup instructions for that engine.
-    - Ensure you have [any necessary software, libraries, or dependencies] installed.
-
-3. **Running the Game**:
-    - If using [e.g., Unity]: Open the project in [Unity/other engine], and press the play button.
-    - If using a different platform, follow the specific instructions in the repository.
-
-4. **Gameplay**:
-    - Use [controls, e.g., arrow keys/WASD] to navigate the character.
-    - [Briefly explain the objective and any controls the player needs to know].
-    - [Any power-ups, special abilities, or other mechanics the player should be aware of].
+| Key                 | Action              |
+|---------------------|---------------------|
+| W or ⭡              | Move Up             |
+| A or ←              | Move Left           |
+| S or ↓              | Move Down           |
+| D or →              | Move Right          |
+| _ or W or ↑         | Jump/Action         |
 
 ---
 
