@@ -17,9 +17,7 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 
 ---
 
-## 🃏 How to Play
-
-**Movement Controls**:
+## 🎮 Constrols
 
 | Key                     | Action              |
 |-------------------------|---------------------|
@@ -32,19 +30,29 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 
 ---
 
-## 🎮 Screenshots
+## 📸 Screenshots
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Things We Should Have Done
 
-While this project served as a great learning experience, there are many areas where I plan to improve or expand on it in the future:
+While this project served as a great learning experience, there are many areas that could have been improved:
 
-- **Improve AI Behavior**: The current enemy AI could be more dynamic and challenging.
-- **Better Level Design**: Future versions will feature more engaging and creative level designs.
-- **Graphics and Animations**: The visual assets can be refined, and animations can be smoother.
-- **Sound Design**: I'd like to add more sound effects and background music to enhance the atmosphere.
-- **Cross-Platform Support**: Eventually, I plan to port the game to [platforms like mobile, web, etc.].
+- **Audio**: There was no audio, although we did start writing code for it.
+  
+- **Hard Code**: The levels are hard coded a little too much, especially level 8. Code for the levels could be greatly simplified and reduced.
+
+- **Gravity**: Originally the whole map was the rotate but we couldn't figure that out. Gravity changed horizontally could have been a nice touch.
+
+- **Action Listener**: We should've code the controls you don't have to click at the exact moment, but can click a little before. 
+
+- **Menu Buttons**: Some of the menu buttons don't work and need to be clicked several times - only the death menu.
+
+- **Static**: At the time of the project, we didn't really understand what static did and would make mostly everything static because Eclipse would tell us.
+
+- **Surfboard**: Originally the surfboard was supposed to be a push box, but the push block code made a surfboard instead.
+
+-  **Level Design**: The level design is mostly lacking and there are only 8 levels.
 
 ---
 
