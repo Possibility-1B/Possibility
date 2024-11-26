@@ -17,7 +17,7 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 
 ---
 
-## 🎮 Constrols
+## 🎮 Controls
 
 | Key                     | Action              |
 |-------------------------|---------------------|
