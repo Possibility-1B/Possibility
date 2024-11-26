@@ -57,9 +57,9 @@ While this project served as a great learning experience, there are many areas w
 ## 🕮 Libraries 
 <pre
     <b>
-• Slick2D            • LWJGL (core | util | applet)            • IBXM            • JInput            • JNLP   
+• Slick2D                • LWJGL (core | util | applet)                • IBXM                • JInput                • JNLP   
         
-• JOGG               • JOrbis                                  • TinyLinePP      • DirectInput       • OpenAL
+• JOGG                   • JOrbis                                      • TinyLinePP          • DirectInput           • OpenAL
     </b>
 </pre>
 
