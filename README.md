@@ -4,13 +4,13 @@ _Possibility_ is a 2D game developed as part of a themed senior high school proj
 
 ## 📜 Project Description
 
-[Game Title] is a [type of game: platformer, puzzle, adventure, etc.] where the player [brief description of gameplay mechanics and objective]. The goal of the game is to [what the player needs to achieve] while navigating through various levels filled with challenges and obstacles.
+_Possibility_is a 2D side scroller and platformer consisting of 8 levels where the player has to obtain a key to pass through the level door. 
 
 ### Features:
-- **Core Mechanics**: [briefly describe core gameplay mechanics]
-- **Graphics/Art Style**: [e.g., pixel art, minimalist, etc.]
-- **Sound**: [briefly describe music/sound effects]
-- **Levels/Progression**: [describe how the game progresses, if applicable]
+- **Gravity Switch**: A box interactable with an arrow indicating which way gravity will be flipped. There is a cooldown at the bottom left of the screen that shows when you can flip gravity again.
+- **Spike**: A triangular obstacle that will kill the player if touched. There are stationary spikes and moving spikes, which activate once the player passes the x-coordinate of the spike.
+- **Ice**: A rectangular obstacle, usually embedded into the floor, that will freeze horizontal movement until the player leaves the ice.
+- **Surfboard**: A box-shaped obstacle that moves very freely when the player stands on top of it. Gravity affects the surfboard, but not as much as it does with the player.
 
 ---
 
