@@ -16,6 +16,12 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 -  **Surfboard**: A box-shaped obstacle that moves very freely when the player stands on top of it. Gravity affects the surfboard, but not as much as it does with the player.
 
 ---
+## ⧸⧸ Cloning _Possibility_
+
+   ```bash
+   git clone https://github.com/Possibility-1B/Possibility.git
+```
+---
 
 ## 🎮 Controls
 
