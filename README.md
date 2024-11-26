@@ -14,7 +14,7 @@ This repository contains a game I developed during my high school years. It was 
 
 ---
 
-## 🕹️ How to Play
+## 🎮 How to Play
 
 1. **Download/Clone the Repository**:
     - Clone this repository using Git:
@@ -42,7 +42,7 @@ This repository contains a game I developed during my high school years. It was 
 
 ---
 
-## 🚀 Future Improvements
+## 🙭 Future Improvements
 
 While this project served as a great learning experience, there are many areas where I plan to improve or expand on it in the future:
 
@@ -54,7 +54,7 @@ While this project served as a great learning experience, there are many areas w
 
 ---
 
-## 🕮 Libraries 
+## 📚 Libraries 
 <pre
     <b>
 • Slick2D           • LWJGL (core | util | applet)           • IBXM           • JInput           • JNLP   
