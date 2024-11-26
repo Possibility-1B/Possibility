@@ -14,7 +14,7 @@ This repository contains a game I developed during my high school years. It was 
 
 ---
 
-## 🂿 How to Play
+🂿 ## How to Play
 
 1. **Download/Clone the Repository**:
     - Clone this repository using Git:
