@@ -18,13 +18,14 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 
 **Movement Controls**:
 
-| Key                 | Action              |
-|---------------------|---------------------|
-| W or ⭡              | Move Up             |
-| A or ←              | Move Left           |
-| S or ↓              | Move Down           |
-| D or →              | Move Right          |
-| _ or W or ↑         | Jump/Action         |
+| Key                     | Action              |
+|-------------------------|---------------------|
+| `W` or `⭡`              | Move Up             |
+| `A` or `←`              | Move Left           |
+| `S` or `↓`              | Move Down           |
+| `D` or `→`              | Move Right          |
+| `_ `or `W` or `↑`       | Jump                |
+| `E`                     |                     |  
 
 ---
 
