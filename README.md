@@ -55,7 +55,7 @@ While this project served as a great learning experience, there are many areas w
 ---
 
 ## 🕮 Libraries 
-<pre>
+<pre
     <b>
 • Slick2D                • LWJGL (core | util | applet)            • IBXM                  • JInput                 • JNLP   
         
