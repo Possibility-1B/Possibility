@@ -38,30 +38,7 @@ This repository contains a game I developed during my high school years. It was 
 
 ---
 
-## 🎮 Screenshots & Demo
-
-Here are a few screenshots to give you a preview of the game:
-
-![Screenshot 1](https://github.com/jhauptma12357/images/blob/main/Possiblility/Company%20Logo.png)
-*Description of this screenshot.*
-
-![Screenshot 2](https://github.com/jhauptma12357/images/blob/main/Possiblility/Game%20Logo.png)
-*Description of this screenshot.*
-
-![Screenshot 3](https://github.com/jhauptma12357/images/blob/main/Possiblility/dead.png)
-*Description of this screenshot.*
-
-![Screenshot 4](https://github.com/jhauptma12357/images/blob/main/Possiblility/level4.png)
-*Description of this screenshot.*
-
-![Screenshot 5](https://github.com/jhauptma12357/images/blob/main/Possiblility/level8.png)
-*Description of this screenshot.*
-
-![Screenshot 6](https://github.com/jhauptma12357/images/blob/main/Possiblility/levelselect.png)
-*Description of this screenshot.*
-
-![Screenshot 7](https://github.com/jhauptma12357/images/blob/main/Possiblility/levelselect2.png)
-*Description of this screenshot.*
+## 🎮 Screenshots
 
 ---
 
@@ -77,14 +54,15 @@ While this project served as a great learning experience, there are many areas w
 
 ---
 
-## 🔧 Technologies Used
+## 🕮 Libraries 
+<pre>
+    <b>
+• Slick2D                • LWJGL (core | util | applet)            • IBXM                  • JInput                 • JNLP   
+        
+• JOGG                   • JOrbis                                  • TinyLinePP            • DirectInput            • OpenAL
+    </b>
+</pre>
 
-- **Game Engine/Framework**: [e.g., Unity, Godot, Pygame]
-- **Programming Language(s)**: [e.g., C#, Python, JavaScript]
-- **Libraries/Tools**: [e.g., Phaser, Aseprite, Audacity]
-- **Version Control**: Git
-
----
 
 ## 🤖 About Me
 
