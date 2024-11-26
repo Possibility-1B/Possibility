@@ -1,4 +1,4 @@
-# Possibility
+# ☯ Possibility
 
 _Possibility_ is a 2D game developed as part of a themed senior high school project (2022) by a team of three collaborators. The theme was duality which we translated into the game using Java and Slick2D through the mechanics of reversing gravity.
 
