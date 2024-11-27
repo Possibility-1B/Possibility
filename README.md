@@ -62,7 +62,7 @@ While this project served as a great learning experience, there are many areas t
 
 ---
 
-## 📚 Libraries [[download]](https://github.com/Possibility-1B/Possibility/tree/libraries/libs)
+## 📚 Libraries [[download]](https://github.com/Possibility-1B/Possibility/raw/refs/heads/libraries/libs.zip)
 <pre
     <b>
 • Slick2D           • LWJGL (core | util | applet)           • IBXM           • JInput           • JNLP   
