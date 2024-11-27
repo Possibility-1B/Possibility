@@ -1,8 +1,8 @@
 # ☯ Possibility [[runnable]](https://github.com/Possibility-1B/Possibility/releases/tag/binaries)
 
 <div style="display: flex; justify-content: space-around;">
-  <img align="left" src="https://github.com/user-attachments/assets/05b214e7-a524-41a1-924f-ab4537dc0abc" width="47%"/>
-  <img align = "right" src="https://github.com/user-attachments/assets/4ae1b347-0dfd-4321-b615-e6706b8f8586" width="47%"/>
+  <img align="left" src="https://github.com/user-attachments/assets/05b214e7-a524-41a1-924f-ab4537dc0abc" width="47%" height="270px"/>
+  <img align = "right" src="https://github.com/user-attachments/assets/4ae1b347-0dfd-4321-b615-e6706b8f8586" width="47%" height="270px"/>
 </div>   
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
