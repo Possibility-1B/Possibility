@@ -43,14 +43,10 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 ---
 
 ## 📸 Media
-![level8](
-
-
 <div style="display: flex; justify-content: space-around;">
-  <img align="left" src="https://github.com/user-attachments/assets/3da8d3cf-8fd2-4a69-8e14-79db082f7964" width = "485px" height="273xp"/>
-  <img align = "right" src="https://github.com/user-attachments/assets/c6d73211-aee0-46c5-8247-65c167865efa" width= "485px" height ="273px/>
+  <img align="left" src="https://github.com/user-attachments/assets/5167ea94-3f0e-4513-b3b8-ad09b712a455" width = "47%"/>
+  <img align = "right" src="https://github.com/user-attachments/assets/6e9c4696-91cf-4db5-be4a-a80f207dc80a" width= "47%"/>
 </div>   
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ---
