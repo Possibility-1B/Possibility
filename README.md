@@ -1,8 +1,8 @@
 # ☯ Possibility [[runnable]](https://github.com/Possibility-1B/Possibility/releases/tag/binaries)
 
 <div style="display: flex; justify-content: space-around;">
-  <img align="left" src="https://github.com/user-attachments/assets/05b214e7-a524-41a1-924f-ab4537dc0abc" width="47%" height="47%"/>
-  <img align = "right" src="https://github.com/user-attachments/assets/4ae1b347-0dfd-4321-b615-e6706b8f8586" width="47%" height="47%"/>
+  <img align="left" src="https://github.com/user-attachments/assets/05b214e7-a524-41a1-924f-ab4537dc0abc" width="47%"/>
+  <img align = "right" src="https://github.com/user-attachments/assets/4ae1b347-0dfd-4321-b615-e6706b8f8586" width="47%"/>
 </div>   
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 _Possibility_ is a 2D game developed as part of a themed senior high school project (2022) by a team of three collaborators. The theme was duality which we translated into the game using Java and Slick2D through the mechanics of reversing gravity.
