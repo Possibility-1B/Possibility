@@ -73,7 +73,7 @@ While this project served as a great learning experience, there are many areas t
 
 ---
 
-## 🧹 Post Project Cleanup
+## 🧹 Post Completion Cleanup
 
 Cleanup was done after completion of Possibility, limited functionality changes were implemented.
 
