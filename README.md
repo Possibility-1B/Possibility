@@ -77,17 +77,17 @@ While this project served as a great learning experience, there are many areas t
 
 Cleanup was done after completion of Possibility, limited functionality changes were implemented.
 
-- **Usage**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to find unecessary code that was removed.
+- **Usage**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to find and remove unecessary code.
 
-- **Modifiers**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to determine whether some modifiers were unnecessary which were changed.
+- **Modifiers**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to located and change unnecessary modifiers.
 
-- **Imports**: Unecessary imports were removed as well as sorting them from top to bottom: packages, classes, third-party libraries, and Java libraries.
+- **Imports**: Unecessary imports were removed. Imports were changed to be sorted from top to bottom: packages, classes, third-party libraries, and Java libraries.
 
-- **Attributes**: Class attributes were organized and in order from top to bottom in memory size then objects. Depending on context, variables were converted to single line declarations v.s. multiple lines.
+- **Attributes**: Class attributes were organized in order from top to bottom in memory size then objects. Depending on context, variables were converted to single line declarations versus multiple lines.
 
 - **Media**: The media classes [AnimationLoader.java](https://github.com/Possibility-1B/Possibility/blob/main/src/Media/AnimationLoader.java) and [ImageLoader.java](https://github.com/Possibility-1B/Possibility/blob/main/src/Media/ImageLoader.java) were altered to use a HashMap instead of multiple variables. File paths were changed to be Jar friendly using getResourceAsStream().
 
-- **Level Completion**: Originally there was a variable keeping track of level completion so levels had to be completed in succcession but wasn't ever used. This was fixed.
+- **Level Completion**: Originally there was a variable keeping track of level completion to enforce levels had to be completed in succcession but wasn't ever used. This was fixed.
   
 ---
 
