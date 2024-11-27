@@ -73,6 +73,24 @@ While this project served as a great learning experience, there are many areas t
 
 ---
 
+## 🧹 Post Project Cleanup
+
+Cleanup was done after completion of Possibility, limited functionality changes were implemented.
+
+- **Usage**: UCDetector was used to find unecessary code that was removed.
+
+- **modifiers**: UCDetector was used to determine whether some modifiers were unnecessary which were changed.
+
+- **Imports**: Unecessary imports were removed as well as sorting them from top to bottom: packages, classes, third-party libraries, and Java libraries.
+
+- **Attributes**: Class attributes were organized and in order from top to bottom in memory size then objects. Depending on context, variables were converted to single line declarations v.s. multiple lines.
+
+- **Media**: The media classes xxx and xxx were altered to use a hashmap instead of multiple variables. File paths were changed to be Jar friendly using Input Streams.
+
+- **Level Completion**: Originally there was a variable keeping track of level completion so levels had to be completed in succcession but wasn't ever used. This was fixed.
+  
+---
+
 ## 📚 Libraries [[download]](https://github.com/user-attachments/files/17930581/libs.zip)
 <pre
     <b>
