@@ -77,9 +77,9 @@ While this project served as a great learning experience, there are many areas t
 
 Cleanup was done after completion of Possibility, limited functionality changes were implemented.
 
-- **Usage**: UCDetector was used to find unecessary code that was removed.
+- **Usage**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to find unecessary code that was removed.
 
-- **modifiers**: UCDetector was used to determine whether some modifiers were unnecessary which were changed.
+- **modifiers**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to determine whether some modifiers were unnecessary which were changed.
 
 - **Imports**: Unecessary imports were removed as well as sorting them from top to bottom: packages, classes, third-party libraries, and Java libraries.
 
