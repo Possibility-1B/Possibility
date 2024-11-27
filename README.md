@@ -79,7 +79,7 @@ Cleanup was done after completion of Possibility, limited functionality changes 
 
 - **Usage**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to find unecessary code that was removed.
 
-- **modifiers**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to determine whether some modifiers were unnecessary which were changed.
+- **Modifiers**: [UCDetector](https://marketplace.eclipse.org/content/unnecessary-code-detector) was used to determine whether some modifiers were unnecessary which were changed.
 
 - **Imports**: Unecessary imports were removed as well as sorting them from top to bottom: packages, classes, third-party libraries, and Java libraries.
 
