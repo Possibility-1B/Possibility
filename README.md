@@ -27,6 +27,9 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
    ```bash
    git clone https://github.com/Possibility-1B/Possibility.git
 ```
+
+Make sure to set the res folder as a source folder.
+
 ---
 
 ## 🎮 Controls
