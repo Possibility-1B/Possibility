@@ -85,7 +85,7 @@ Cleanup was done after completion of Possibility, limited functionality changes 
 
 - **Attributes**: Class attributes were organized and in order from top to bottom in memory size then objects. Depending on context, variables were converted to single line declarations v.s. multiple lines.
 
-- **Media**: The media classes [AnimationLoader.java](https://github.com/Possibility-1B/Possibility/blob/main/src/Media/AnimationLoader.java) and [ImageLoader](https://github.com/Possibility-1B/Possibility/blob/main/src/Media/ImageLoader.java) were altered to use a hashmap instead of multiple variables. File paths were changed to be Jar friendly using getResourceAsStream().
+- **Media**: The media classes [AnimationLoader.java](https://github.com/Possibility-1B/Possibility/blob/main/src/Media/AnimationLoader.java) and [ImageLoader.java](https://github.com/Possibility-1B/Possibility/blob/main/src/Media/ImageLoader.java) were altered to use a HashMap instead of multiple variables. File paths were changed to be Jar friendly using getResourceAsStream().
 
 - **Level Completion**: Originally there was a variable keeping track of level completion so levels had to be completed in succcession but wasn't ever used. This was fixed.
   
