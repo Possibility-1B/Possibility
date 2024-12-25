@@ -1,4 +1,4 @@
-# ☯ Possibility [[runnable]](https://github.com/Possibility-1B/Possibility/releases/tag/Java8Binarries)
+# ☯ Shudder [[runnable]](https://github.com/Possibility-1B/Possibility/releases/tag/Java8Binarries)
 
 <div style="display: flex; justify-content: space-around;">
   <img align="left" src="https://github.com/user-attachments/assets/05b214e7-a524-41a1-924f-ab4537dc0abc" width="47%"/>
@@ -6,11 +6,10 @@
 </div>   
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-_Possibility_ is a 2D game developed as part of a themed senior high school project (2022) by a team of three collaborators. The theme was duality which we translated into the game using Java and Slick2D through the mechanics of reversing gravity.
-
+_Shudder_ is a 3D game created for our highschool senior project by a team of 2 utilizing Blender and Unreal Engine 5. This was our capstone project, so it was a cumulation of all the knowledge we've learned for three years, AP Computer Science Principles, AP Computer Science A, and the first half of out C++ class (the class this was made for).
 ## 📜 Description
 
-_Possibility_ is a 2D side scroller and platformer consisting of 8 levels where the player has to obtain a key to pass through the level door. 
+_Possibility_ is a 3D horror/puzzle game consisting of one level, a house. The player has to manage the battery of their flashlight, not using too much and picking up batteries when necessary. To get out there is one main puzzle utilizing the color wheel, Morse Code, and alphabetical numeration. Completing these puzzles gives you the code on the padlock to escape the house. While the player is doing all of this, there is a AI monster roaming around that will reset progress if killing the player. The player has some methods to hide from the monster, hiding in beds, closets, and closing doors since the monster cannot open doors.
 
 ### Features:
 - **Gravity Switch**: A box interactable with an arrow indicating which way gravity will be flipped. There is a cooldown at the bottom left of the screen that shows when you can flip gravity again.
