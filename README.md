@@ -19,7 +19,7 @@ _Possibility_ is a 2D side scroller and platformer consisting of 8 levels where 
 
 - **Ice**: A rectangular obstacle, usually embedded into the floor, that will freeze horizontal movement until the player leaves the ice.
 
--  **Surfboard**: A box-shaped obstacle that moves very freely when the player stands on top of it. Gravity affects the surfboard, but not as much as it does with the player.
+-  **Ghost-Block**: A box-shaped obstacle that moves very freely when the player stands on top of it. Gravity affects the ghost-block, but not as much as it does with the player.
 
 ---
 ## ⧸⧸ Cloning _Possibility_
